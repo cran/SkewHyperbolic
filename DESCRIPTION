@@ -1,7 +1,7 @@
 Package: SkewHyperbolic
 Type: Package
-Version: 0.3-1
-Date: 2012-04-13
+Version: 0.3-2
+Date: 2013-02-26
 Title: The Skew Hyperbolic Student t-Distribution
 Author: David Scott <d.scott@auckland.ac.nz>, Fiona Grimson
 Maintainer: David Scott <d.scott@auckland.ac.nz>
@@ -14,8 +14,9 @@ Description: Functions are provided for the density function,
         functions for the mean, variance, skewness, kurtosis and mode
         of a given distribution and to calculate moments of any order
         about any centre. To assess goodness of fit, there are
-        functions to generate a Q-Q plot and a P-P plot.
+        functions to generate a Q-Q plot, a P-P plot and a tail plot.
 License: GPL (>= 2)
-Packaged: 2012-04-13 12:48:38 UTC; dsco036
+Packaged: 2013-02-25 22:17:39 UTC; dsco036
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2012-04-13 20:32:59
+Date/Publication: 2013-02-26 07:53:53

@@ -1,5 +1,5 @@
-8b55f8f1d5921054836688014b28fbf7 *ChangeLog
-7d1b8a1d3bb9265c5f25b1c82d0810e5 *DESCRIPTION
+bec54f9080546944ba580b1b3991aafb *ChangeLog
+982c46503f6f2730e5de689f0b321f9c *DESCRIPTION
 4d87bc2ea34d9fc085261fd230104960 *NAMESPACE
 1eeaf84ce5e51dc9d782d9b71a111389 *R/dskewhyp.R
 f51dd154de5f7ca16a6c3df9b7f0a063 *R/plot.skewhypFit.R
@@ -8,7 +8,7 @@ f51dd154de5f7ca16a6c3df9b7f0a063 *R/plot.skewhypFit.R
 0d1c5f30bc671f160a10566540e0aa8e *R/skewhypCheckPars.R
 8ab0934d3186ae00d32fc6fb14835523 *R/skewhypFit.R
 833f017fb89b5e5793bc0afe5957e251 *R/skewhypFitStart.R
-6cbeab6adb8d48169ff41aa28791bb77 *R/skewhypMeanVarMode.R
+1782859e1eebbfc830e64b3bfe180470 *R/skewhypMeanVarMode.R
 4dec54cb7d655587440553636de651fa *R/skewhypMom.R
 a24420afc53f2304ebb92730d980a765 *R/skewhypTailPlotLine.R
 880ae4d573c91d9d025e87c25cf2ec29 *R/summary.skewhypFit.R
@@ -41,4 +41,4 @@ f13fc38de36944c548dbf37e83062cac *man/summary.skewhypFit.Rd
 bc8ff5e68a71169e35392e32b1e41e77 *tests/testqskewhyp.R
 d79219e35ed25fd95c9e4d20b235d0a0 *tests/testskewhypCalcRange.R
 25c134b067bce13e04516c3da385cf7e *tests/testskewhypParam.R
-df5bb03d6b1d9d2a784044b85af95257 *tests/testskewhypTailPlotLine.R
+9a3286197a42cb8cf0afbb7adb4796a8 *tests/testskewhypTailPlotLine.R
