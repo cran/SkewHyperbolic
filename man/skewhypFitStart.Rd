@@ -1,8 +1,10 @@
 \name{skewhypFitStart}
 \alias{skewhypFitStart}
 \alias{skewhypFitStartLA}
+\alias{skewhypFitStartMM}
+
 \title{
-Find Starting Values for Fittting a Skew Hyperbolic Student
+Find Starting Values for Fitting a Skew Hyperbolic Student
 t-Distribution
 }
 \description{
@@ -10,8 +12,10 @@ t-Distribution
   fitting a skew hyperbolic \emph{t}-distribution to data.
 }
 \usage{
-skewhypFitStart(x, breaks = NULL, startValues = "LA", paramStart = NULL)
+skewhypFitStart(x, breaks = NULL, startValues = "LA", paramStart = NULL,
+...)
 skewhypFitStartLA(x, breaks = NULL)
+skewhypFitStartMM(x, nuTol = 1e-6, nuStart = 5, ...)
 }
 \arguments{
   \item{x}{Data vector.}
@@ -23,11 +27,17 @@ skewhypFitStartLA(x, breaks = NULL)
     parameters.} 
   \item{paramStart}{If \code{startValues = "US"} the user must specify a
     vector of starting parameter values in the form
-    \code{c(mu,log(delta),beta,log(nu))}.}
+    \code{c(mu,delta,beta,nu)}.}
+  \item{nuTol}{Tolerance for numerical determination of \code{nu} in
+    \code{\link{skewhypFitStartMM}}}
+  \item{nuStart}{Initial value for numerical determinationof \code{nu}
+    in \code{\link{skewhypFitStartMM}}}
+  \item{...}{Passes additional arguments to \code{\link{skewhypFitStartMM}}
+  }
 }
 \details{
-  \code{startValues} can be either \code{"US"}(User-supplied) or
-  \code{"LA"} (Linear approximation).
+  \code{startValues} can be either \code{"US"}(User-supplied),
+  \code{"LA"}(Linear approximation), or \code{"MM"}(Method of moments).
 
   If \code{startValues = "US"} then a value for \code{paramStart} must be
   supplied. The parameters are checked for validity by the function
@@ -43,6 +53,9 @@ skewhypFitStartLA(x, breaks = NULL)
   too skewed, there are not enough points in the lighter tail to fit the
   required linear model, and the method will stop and return a
   warning. User supplied values will have to be used in this case.
+
+  If \code{startValues = "MM"}, start values are found using the method
+  of moments as outlined in Aas and Haff (2006).
 }
 \value{
   \code{skewhypFitStart} returns a list with components:
@@ -52,7 +65,8 @@ skewhypFitStartLA(x, breaks = NULL)
   \item{midpoints}{The cell midpoints found by a call to \code{\link{hist}}.}
   \item{empDens}{The estimated density at the midpoints found by a call
     to \code{\link{hist}} if \code{startValues = "US"} or
-    \code{\link{density}} if \code{startValues  = "LA"}.}
+    \code{startValues = "MM"}, or to \code{\link{density}} if
+    \code{startValues  = "LA"}.}
   \item{svName}{Name of the method used to find the starting values.}
 }
 \references{

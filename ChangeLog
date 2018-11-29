@@ -1,3 +1,23 @@
+2018-06-08    <d.scott@auckland.ac.nz>
+
+	* skewhypMeanVarMode.R changed to fix some errors in skewhypKurt
+	function noted by Alexios Ghalanos, email 9/8/13
+
+	* DESCRIPTION updated to add imports, grDevices, graphics, stats,
+	DistributionUtils, GeneralizedHyperbolic and change depends to >=
+	3.0.1
+
+2014-10-05    <d.scott@auckland.ac.nz>
+
+	* DESCRIPTION update to change RUnit to suggests, not depends
+
+2013-05-13    <d.scott@auckland.ac.nz>
+
+	* skewhypParam updated to avoid creating mu, delta, beta, and nu
+	which might overwrite existing values
+
+	* dskewhyp updated to deal with underflow of Bessel function
+
 2013-02-26    <d.scott@auckland.ac.nz>
 
 	* version changed to 0.3-2
@@ -50,7 +70,7 @@
 
 	* ppskewhyp and qqskewhyp subtitle default changed to match those
 	for hist and logHist (param = (parameter values vector))
-	
+
 
 2009-10-10    <d.scott@auckland.ac.nz>
 
