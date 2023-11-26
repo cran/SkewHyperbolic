@@ -1,7 +1,7 @@
 Package: SkewHyperbolic
 Type: Package
-Version: 0.4-0
-Date: 2018-11-29
+Version: 0.4-2
+Date: 2023-11-26
 Title: The Skew Hyperbolic Student t-Distribution
 Author: David Scott <d.scott@auckland.ac.nz>, Fiona Grimson
 Maintainer: David Scott <d.scott@auckland.ac.nz>
@@ -9,7 +9,7 @@ Depends: R (>= 3.0.1)
 Imports: grDevices, graphics, stats, DistributionUtils,
         GeneralizedHyperbolic
 Suggests: RUnit
-Encoding: latin1
+Encoding: UTF-8
 Description: Functions are provided for the density function,
 	     distribution function, quantiles and random number
 	     generation for the skew hyperbolic
@@ -22,6 +22,6 @@ Description: Functions are provided for the density function,
 License: GPL (>= 2)
 URL: https://r-forge.r-project.org/projects/rmetrics/
 NeedsCompilation: no
-Packaged: 2018-11-29 08:36:00 UTC; dsco036
+Packaged: 2023-11-26 00:10:44 UTC; dsco036
 Repository: CRAN
-Date/Publication: 2018-11-29 09:20:03 UTC
+Date/Publication: 2023-11-26 00:50:02 UTC

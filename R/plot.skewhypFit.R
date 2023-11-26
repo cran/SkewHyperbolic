@@ -45,7 +45,7 @@ plot.skewhypFit <- function(x, which = 1:4,
     if (show[2]) {#log histogram
         logHist(obs, breaks, include.lowest = TRUE, right = FALSE,
                 main = paste(plotTitles[2], obsName), ...)
-        curve(logskewhypDens, min(breaks) - 1, max(breaks) + 1, add = TRUE,
+        curve(logskewhypDens, add = TRUE,
               ylab = NULL, xlab = NULL, col = 2, ...)
         title(sub = paste("param = (", round(param[1], 3), ",",
               round(param[2], 3), ",", round(param[3], 3), ",",
@@ -64,7 +64,7 @@ plot.skewhypFit <- function(x, which = 1:4,
 ###### Print method for skewhypFit #####################################
 print.skewhypFit <- function (x, digits = max(3, getOption("digits") - 3), ...)
 {
-    if (!class(x) == "skewhypFit")
+    if (!inherits(x, "skewhypFit"))
         stop("Object must belong to class skewhypFit")
 
     cat("\nData:     ", x$xName, "\n")
